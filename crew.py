@@ -1,10 +1,7 @@
 import os
 from crewai import Crew,Process
-from dotenv import load_dotenv
 from agents import agents
 from tasks import tasks
-
-load_dotenv()
 
 #Initialize the crew
 

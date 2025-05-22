@@ -36,4 +36,4 @@ pro_gambler = Agent(
 
 agents: list[Agent] = [cricket_researcher,cricket_analyst,pro_gambler]
 
-__all__ = ["agents"]
+__all__ = ["agents", "cricket_researcher", "cricket_analyst", "pro_gambler"]
