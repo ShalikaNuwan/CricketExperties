@@ -1,12 +1,15 @@
 import os
 from dotenv import load_dotenv
-# from openai import AzureOpenAI
 from crewai import LLM
+from langchain_openai import AzureChatOpenAI
+
+load_dotenv()
 
 llm = LLM(
-    model=os.getenv('AZURE_API_MODEL'),
-    api_version=os.getenv('AZURE_API_VERSION'),
-    temperature=0.7
+    model="mistral/mistral-large-latest",
+    temperature=0.7,
+    api_key=os.getenv("MISTRAL_API_KEY"),
 )
+
 
 __all__ = ["llm"]
